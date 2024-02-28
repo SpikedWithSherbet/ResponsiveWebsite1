@@ -1,0 +1,341 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: blue;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    width: 100%;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-right: auto;
+    padding: 0.7em;
+    font-family: 'Rubik', sans-serif;
+}
+h2 {
+    font-size: 2.3rem;
+    margin-right: auto;
+    padding: 1em;
+    font-family: 'Rubik', sans-serif;
+}
+
+article {
+
+    margin-left: 3em;
+    margin-right: 4em;
+    padding: 1em;
+    padding-bottom: 0em;
+}
+
+article h2 {
+
+    text-align:center;
+
+
+}
+
+article p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align:left;
+}
+
+.ourworksection {
+    background-color: lightyellow;
+}
+
+
+.ourworksection h2 {
+    text-align: left;
+    margin-left: 1em;
+}
+
+    .gridsection p {
+        display: block;
+        margin-left: 3em;
+        margin-right: 3em;
+
+        padding-bottom: 2em;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        justify-content:center;
+        
+    }
+
+.gridsection {
+
+    display: block;
+
+}
+
+.gridsection p {
+        display: block;
+        margin-left: 3em;
+        margin-right: 3em;
+
+        padding-bottom: 2em;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        justify-content:center;
+        
+    }
+
+.ourworkgrid {
+    margin-left: 3em;
+    margin-right: 3em;
+    box-sizing: border-box;
+    padding: 1em;
+    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 18.75em;
+    justify-content: end;
+    justify-items: end;
+}
+
+.ourworkgrid img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ourworkgrid-col2 {
+    grid-column: span 2;
+}
+
+.ourworkgrid-row2 {
+    grid-row: span 2;
+}
+
+
+
+h3 {
+    font-size: 2.1rem;
+    text-align: center;
+    padding: 1em;
+}
+header {
+    display: flex;
+    background-color: lightgreen;
+    padding-bottom: 1em;
+    padding: 1em;
+    justify-content:flex-end;
+}
+
+img {
+    border-radius:5%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    align-content: flex-end;
+    justify-content: space-between;
+    margin-right: auto;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+nav ul li {
+    /* display: inline; */
+    margin-right: 1em;
+    text-decoration: none;
+    padding-top: 2.6em;
+}
+
+    nav ul li a {
+        text-decoration: none;
+        color:black
+
+    }
+
+    nav ul li a:hover{
+        text-decoration: none;
+        color: dimgray;
+    }
+
+.imagesquares {
+
+
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding-top: 1em;
+    display: flex;
+
+}
+
+.imagesquares .textblock {
+
+    height: 13em;
+    min-width: 13em;
+    padding: 1em;
+    margin: 2em;
+    border: 1px solid;
+    box-shadow: 0px 5px;
+    border-radius: 5%;
+    
+}
+
+    .imagesquares .textblock img {
+        display:block;
+        width: 2rem;
+        height: 2rem;
+        margin:auto;
+
+        
+    }
+
+form {
+    display: block;
+    margin: auto;
+    padding-bottom: 2em;
+    padding-top: 1em;
+    width: 100%;
+    max-width: 20em;
+}
+
+
+
+.inputgroup {
+
+    margin-bottom: 1.5em;
+    position: relative;
+}
+
+input, textarea {
+
+    width: 100%;
+    padding: 0.5em;
+    outline: 0;
+    border: 1px solid lightgreen;
+    color: black;
+    font-size: 1rem;
+    border-radius: 15px;
+    font-family:'Rubik', sans-serif;
+
+}
+
+button {
+    padding: 1em;
+    border-radius: 3rem;
+    background: linear-gradient(270deg, lightgreen, lightyellow);
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+}
+
+.topbutton {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 1000;
+}
+
+/* media query for mobiles */
+@media screen and (max-width: 47.9375em) {
+
+    nav ul {
+        justify-content: center;
+    }
+    
+    body {
+        background-color: aliceblue;
+        font-size: 11px;
+        display: block;
+    }
+
+    h2 {
+
+        font-size: 2.1rem;
+    }
+    .center {
+
+        text-align: center;
+    }
+
+    img {
+
+        height: 75%;
+        width: 75%;
+    }
+
+    header {
+        display:block;
+    }
+
+    .ourworkgrid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 9.375em;
+    }
+
+    .imagesquares .textblock {
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .gridsection p {
+
+        font-size: 0.9rem;
+
+    }
+
+    
+
+}
+
+@media screen and (max-width: 20em) {
+
+    nav ul {
+        justify-content: left;
+    }
+
+    h1 {
+
+        padding: 0.5em;
+    }
+
+}
+/* media query for tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    body {
+        background-color: aliceblue;
+    }
+
+    .ourworkgrid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: 9.375em;
+    }
+
+    .imagesquares .textblock {
+        margin: 1em;
+        padding: 1em
+    }
+}
+/* media query for desktop */
+/* use em's to relative to body font size 
+https://www.w3schools.com/csSref/css_pxtoemconversion.php */
+@media screen and (min-width: 64em) {
+    body {
+        background-color: aliceblue;
+    }
+
+    .imagesquares {
+        justify-content: center;
+        overflow-x: hidden;
+    }
+
+    
+    .textblock {
+        height: 12em;
+        width: 12em;
+    }
+
+
+    
+    
+}
